@@ -1,0 +1,227 @@
+<!doctype html>
+<html class="no-js" lang="nl-NL">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tessa Elfrink &#x2022; UX Voorbeelden</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#fafafa">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+      html {
+        box-sizing: border-box;
+        font-family: "Jost", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.2rem;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        color: #333;
+        max-width: 1500px;
+        margin-inline: auto;
+      }
+
+      h1, h2, h3, p, ol, ul, li {
+        margin: 0;
+      }
+
+      ol > li {
+        margin-block: 8px;
+      }
+
+      header {
+        background-color: #fff;
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid #ddd;
+        text-align: end;
+      }
+
+      header h1 {
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        > div {
+          padding: 1.5rem 4rem;
+
+          @media (max-width: 768px) {
+            padding: 1rem 2rem;
+          }
+        }
+      }
+
+      .contents {
+        background-color: rgba(102, 51, 153, 0.025); /* rebeccapurple with transparency */
+      }
+
+      .process {
+        background-color: rgba(102, 51, 153, 0.05);
+        margin-inline: -4rem;
+        padding-inline: 4rem;
+        padding-block: 1.5rem;
+      }
+
+      .use-case {
+        border-bottom: 2px dotted rgba(102, 51, 153, 0.2); /* rebeccapurple with transparency */;
+      }
+
+      .use-case h2 {
+        margin-block-end: 1rem;
+      }
+
+      .use-case ol {
+        list-style: none;
+        padding-left: 0;
+        display: grid;
+        gap: 1rem;
+      }
+
+      .use-case--list-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+
+        @media (max-width: 768px) {
+          grid-template-columns: 1fr;
+        }
+
+        p {
+          max-width: 70ch;
+          padding-block-start: 1.4rem;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          /*max-height: 300px;*/
+          justify-self: center;
+        }
+
+        ul {
+          margin-block-start: -1rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Tessa Elfrink &#x2022; UX Voorbeelden</h1>
+    </header>
+    <main>
+      <div class="contents">
+        <h2>Inhoud</h2>
+        <ol>
+          <li><a href="#use-case-1">Beheerpagina pinautomaat overzichtelijker maken</a></li>
+          <li><a href="#use-case-2">Apps uploaden en beheren</a></li>
+        </ol>
+      </div>
+
+      <div id="use-case-1" class="use-case">
+        <i>Context: beheer- en configuratieplatform voor payment terminals</i>
+        <h2>Beheerpagina pinautomaat overzichtelijker maken</h2>
+        <ol type="I">
+          <li>
+            <h3>1. Probleem</h3>
+            <div class="use-case--list-body">
+              <p>De beheerpagina voor een pinautomaat was niet overzichtelijk. Gebruikers konden de belangrijkste informatie niet in 1 oogopslag zien.
+              Er was veel afleiding, en de vele technische informatie maakte de pagina voor sommige gebruikers intimiderend.</p>
+              <img
+                src="./images/terminal-details/terminal-details_old.png"
+                alt="Screenshot van de oude beheerpagina voor een pinautomaat" />
+            </div>
+          </li>
+          <li class="process">
+            <h3>2. Proces</h3>
+            <div class="use-case--list-body">
+              <p>Aan gebruikers hebben we gevraagd:</p>
+              <ul>
+                <li>Wat doe je als eerste wanneer je op deze pagina komt?</li>
+                <li>Waar zoek je naar? Wat wil je hier bereiken?</li>
+                <li>Welke data heb je daarvoor nodig, en welke niet?</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <h3>3. Oplossing</h3>
+            <div class="use-case--list-body">
+              <p>Ik heb een nieuw design gemaakt voor deze pagina. Ik heb de informatie logischer ingedeeld.
+                De meest belangrijke data is nu in 1 oogopslag te zien. Een "Quick links" blokje maakt het uitvoeren van belangrijke acties eenvoudiger.
+                De meer technische informatie is verplaatst naar een "Advanced" tabje.</p>
+              <img
+                src="./images/terminal-details/terminal-details_new-wide.png"
+                alt="Screenshot van de nieuwe beheerpagina voor een pinautomaat" />
+          </li>
+        </ol>
+      </div>
+
+      <div id="use-case-2" class="use-case">
+        <i>Context: beheer- en configuratieplatform voor payment terminals</i>
+        <h2>Apps uploaden en beheren</h2>
+        <ol type="I">
+          <li>
+            <h3>1. Probleem</h3>
+            <div class="use-case--list-body">
+              <p>
+                Gebruikers moeten apps en andere software die op terminals draait kunnen beheren.
+                Dit moesten ze doen in een losstaande applicatie, die niet voor iedereen toegankelijk was.
+                We wilden het graag mogelijk maken om dit te doen op dezelfde plek als waar de terminals zelf beheerd worden.
+              </p>
+              <img
+                src="./images/software-management/pax-store.png"
+                alt="Screenshot van de oude applicatie voor het uploaden van apps" />
+            </div>
+          </li>
+          <li class="process">
+            <h3>2. Proces</h3>
+            <div class="use-case--list-body">
+              <p>Aan gebruikers hebben we gevraagd:</p>
+              <ul>
+                <li>Welke typen software moet je kunnen beheren?</li>
+                <li>Welke data moet je hier kunnen toevoegen? Welke data moet je later nog kunnen wijzigen, en welke niet?</li>
+                <li>Wat doe je als je een nieuwe versie van een app wil publiceren?</li>
+              </ul>
+<!--              <img-->
+<!--                src="./images/software-management/design_list-apps.png"-->
+<!--                alt="Design van een nieuwe pagina voor het inzien van apps" />-->
+            </div>
+          </li>
+          <li>
+            <h3>3. Oplossing</h3>
+            <div class="use-case--list-body">
+              <p>
+                Ik heb designs gemaakt voor het kunnen uploaden, beheren en inzien van apps en firmware in ons eigen systeem.
+                Daarbij heb ik gefocust op het creëren van rust en overzicht.
+                De keten van het uploaden en configureren van versies van apps en firmware, tot het uitrollen daarvan naar een terminal, kan nu op 1 plek beheerd worden.
+              </p>
+              <img
+                src="./images/software-management/design_app-details.png"
+                alt="Design van een nieuwe pagina voor het beheren van een app" />
+            </div>
+          </li>
+        </ol>
+      </div>
+    </main>
+  </body>
+</html>
